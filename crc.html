@@ -1,31 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/modulo.css">
     <title>Jornada do Colaborador</title>
 </head>
+
 <body>
     <div class="container-modulos">
-        <div class="card-modulo">
-            <ul class="title-modulo">Modulo 1
-                <ul class="menu-modulo">
-                    <li class="subitem-modulo">Aula 1
-                        <ul class="aula-modulo">
-                            <li class="video-aula"></li>
-                            <li class="form-aula"></li>
-                        </ul>
-                    </li>
-                    <li class="subitem-modulo">Aula 2
-                        <ul class="aula-modulo">
-                            <li class="video-aula"></li>
-                            <li class="form-aula"></li>
-                        </ul>
-                    </li>
-                </ul>
+        <div class="card-modulo" id="modulo1">
+            <div class="title-modulo">
+                Modulo 1
+                <button class="status-button not-done">Não Feito</button>
+            </div>
+            <ul class="menu-modulo hidden">
+                <li class="subitem-modulo" id="aula1_modulo1">
+                    Aula 1
+                    <button class="status-button not-done">Não Feito</button>
+                    <ul class="aula-modulo hidden">
+                        <li class="video-aula">
+                            <iframe src="https://drive.google.com/file/d/1hxTvxiNvn4h-2CDH9wsF_H6oqzWedJNP/preview"
+                                width="640" height="480" allow="autoplay"></iframe>
+                            <button class="status-button not-done">Não Feito</button>
+                        </li>
+                        <li class="form-aula"><iframe
+                                src="https://docs.google.com/forms/d/e/1FAIpQLSfWRV0Tq7omIr03RyzTLt91bt5WRSFjsKSoO2NxiugKI3fg9w/viewform?embedded=true"
+                                width="640" height="640" frameborder="0" marginheight="0"
+                                marginwidth="0">Carregando…</iframe>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWRV0Tq7omIr03RyzTLt91bt5WRSFjsKSoO2NxiugKI3fg9w/viewform?usp=sf_link">CLIQUE AQUI PARA IR PARA O FORMULARIO</a>
+                            <button class="status-button not-done">Não Feito</button>
+                        </li>
+                    </ul>
+                </li>
+                </li>
+                <li class="subitem-modulo" id="aula2_modulo1">
+                    Aula 2
+                    <button class="status-button not-done">Não Feito</button>
+                    <ul class="aula-modulo hidden">
+                        <li class="video-aula">
+                            Vídeo
+                            <button class="status-button not-done">Não Feito</button>
+                        </li>
+                        <li class="form-aula">
+                            Formulário
+                            <button class="status-button not-done">Não Feito</button>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="card-modulo" id="modulo2">
+            <div class="title-modulo">
+                Modulo 2
+                <button class="status-button not-done">Não Feito</button>
+            </div>
+            <ul class="menu-modulo hidden">
+                <li class="subitem-modulo" id="aula1_modulo2">
+                    Aula 1
+                    <button class="status-button not-done">Não Feito</button>
+                    <ul class="aula-modulo hidden">
+                        <li class="video-aula">
+                            Vídeo
+                            <button class="status-button not-done">Não Feito</button>
+                        </li>
+                        <li class="form-aula">
+                            Formulário
+                            <button class="status-button not-done">Não Feito</button>
+                        </li>
+                    </ul>
+                </li>
+                <li class="subitem-modulo" id="aula2_modulo2">
+                    Aula 2
+                    <button class="status-button not-done">Não Feito</button>
+                    <ul class="aula-modulo hidden">
+                        <li class="video-aula">
+                            Vídeo
+                            <button class="status-button not-done">Não Feito</button>
+                        </li>
+                        <li class="form-aula">
+                            Formulário
+                            <button class="status-button not-done">Não Feito</button>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
+
+    <script src="assets/js/subitens.js"></script>
+    <script src="assets/js/donebutton.js"></script>
 </body>
+
 </html>
